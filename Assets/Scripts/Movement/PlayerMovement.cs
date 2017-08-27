@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float jump;
 
 	private Rigidbody2D body;
+	private bool readyToJump;
 
 	void Awake(){
 		body = this.GetComponent<Rigidbody2D> ();
@@ -16,9 +17,18 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate () {
 		float x = Input.GetAxis ("Horizontal");
-		if (Input.GetButton ("Jump")) {
-			body.AddForce (new Vector2 (0, jump));
-		}
 		transform.Translate ((new Vector2(x, 0) * speed));
+
+
+		if (Input.GetButton ("Jump") && readyToJump) {
+			body.AddForce (new Vector2 (0, jump));
+			readyToJump = false;
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.tag == "floor") {
+			readyToJump = true;
+		}
 	}
 }
