@@ -1,16 +1,9 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-<<<<<<< HEAD
-# Visual Studio 2008
-
-Project("{7138ECE3-9D56-19EF-3EEF-B8692852D4B9}") = "5hoursRush", "Assembly-CSharp.csproj", "{D0FA1C23-505C-16AF-C143-E22133B084E0}"
-EndProject
-Project("{7138ECE3-9D56-19EF-3EEF-B8692852D4B9}") = "5hoursRush", "Assembly-CSharp-Editor.csproj", "{D541F2C3-F06C-EDE8-0653-5089E831E340}"
-=======
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5hoursRush", "Assembly-CSharp.csproj", "{D0FA1C23-505C-16AF-C143-E22133B084E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5hoursRush", "Assembly-CSharp-Editor.csproj", "{D541F2C3-F06C-EDE8-0653-5089E831E340}"
->>>>>>> b579f1118a2cdaeefe357e70938049215b2c22b6
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
