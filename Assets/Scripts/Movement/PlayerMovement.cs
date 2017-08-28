@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 		transform.Translate ((new Vector2(x, 0) * speed));
 
 
-		if (Input.GetButton ("Jump") && readyToJump) {
+		if (Input.GetButtonDown ("Jump") && readyToJump) {
 			body.AddForce (new Vector2 (0, jump));
 			readyToJump = false;
 		}

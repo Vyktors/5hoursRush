@@ -1,20 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 3acfaedc447532140afbb681cd7adfdb
-timeCreated: 1503874468
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 2
-  mipmaps:
-    mipMapMode: 0
-    enableMipMap: 1
-    linearTexture: 0
-    correctGamma: 0
-=======
-guid: e830ae2901e6c4303b0273d733f23fbc
-timeCreated: 1503874361
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
@@ -23,9 +8,10 @@ TextureImporter:
     enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
->>>>>>> b579f1118a2cdaeefe357e70938049215b2c22b6
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -35,34 +21,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-<<<<<<< HEAD
-  generateCubemap: 0
-  cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
-  seamlessCubemap: 0
-  textureFormat: -1
-=======
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: 1
->>>>>>> b579f1118a2cdaeefe357e70938049215b2c22b6
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
-<<<<<<< HEAD
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
-=======
-  compressionQuality: 50
->>>>>>> b579f1118a2cdaeefe357e70938049215b2c22b6
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
@@ -70,12 +44,6 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-<<<<<<< HEAD
-  alphaIsTransparency: 1
-  spriteTessellationDetail: -1
-  textureType: 8
-  buildTargetSettings: []
-=======
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -93,11 +61,19 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
->>>>>>> b579f1118a2cdaeefe357e70938049215b2c22b6
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
