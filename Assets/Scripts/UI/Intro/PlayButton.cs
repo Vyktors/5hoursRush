@@ -8,9 +8,28 @@ public class PlayButton : MonoBehaviour {
 
 	public Text PlayerCount;
 	public Slider PlayerSlider;
-	
-	public void onClick(){
-		
-		Application.LoadLevel ("Main");
+    public GameObject gameManagerPrefab;
+
+    public static GameObject gameManager;
+    private Button currentButton;
+
+    void Awake()
+    {
+        
+    }
+
+    void Start(){
+        currentButton = this.GetComponent<Button>();
+        currentButton.onClick.AddListener(() => { OnClick(); });
+    }
+
+	public void OnClick()
+    {
+        gameManager = Instantiate(gameManagerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        gameManager.GetComponent<GameManager>().CountOfPlayer = PlayerSlider.value;
+        
+        Application.LoadLevel ("Main");
 	}
+
+
 }

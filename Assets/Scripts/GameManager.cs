@@ -18,10 +18,13 @@ public class Player{
 
 public class GameManager : MonoBehaviour {
 	public GameObject playerPrefab; 
-	public Camera GameCamera;
+	public GameObject GameCamera;
 	public Vector3 spawn;
+    public float CountOfPlayer;
 
 	private List<Player> players;
+
+
 
 	public void SpawnPlayer(){
 
@@ -33,6 +36,8 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        GameCamera = GameObject.Find("Camera");
 		SpawnPlayer ();
-	}
+        Debug.Log(CountOfPlayer);
+    }
 }

@@ -146,12 +146,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108273486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 845483814}
-  m_RootOrder: 2
+  m_Father: {fileID: 1326175102}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -229,12 +229,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 197776856}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 845483814}
-  m_RootOrder: 1
+  m_Father: {fileID: 1326175102}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34823596, y: 0.28124994}
   m_AnchorMax: {x: 0.65376407, y: 0.409375}
@@ -797,9 +797,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1326175102}
-  - {fileID: 197776857}
-  - {fileID: 108273487}
-  - {fileID: 1150646264}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -830,15 +827,15 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1150646263}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1541321448}
   - {fileID: 555231508}
   - {fileID: 591893106}
-  m_Father: {fileID: 845483814}
-  m_RootOrder: 3
+  m_Father: {fileID: 1326175102}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -893,6 +890,34 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1181317748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1181317749}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181317749
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1181317748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 412.32, y: 105.42499, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326175101
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +947,9 @@ RectTransform:
   - {fileID: 585272170}
   - {fileID: 1709418944}
   - {fileID: 1879500819}
+  - {fileID: 197776857}
+  - {fileID: 108273487}
+  - {fileID: 1150646264}
   m_Father: {fileID: 845483814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1187,6 +1215,7 @@ GameObject:
   - component: {fileID: 1879500822}
   - component: {fileID: 1879500821}
   - component: {fileID: 1879500820}
+  - component: {fileID: 1879500823}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1287,6 +1316,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1879500818}
+--- !u!114 &1879500823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879500818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b724c86a23634bc18cb671b308b9189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCount: {fileID: 197776858}
+  PlayerSlider: {fileID: 1150646265}
+  gameManagerPrefab: {fileID: 1809010360234014, guid: ac4424518d571ac48ac84033a629b820,
+    type: 2}
 --- !u!1 &2089581472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,7 +1359,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e26251a6c11009b4f93e0552ac551624, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 0.35
+  m_Pitch: 0.9
   Loop: 1
   Mute: 0
   Spatialize: 0
