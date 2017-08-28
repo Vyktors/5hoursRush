@@ -105,9 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2723330a3c5c64283ab7c2484802d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smootitudeY: 2
+  smootitudeY: 0.25
   smootitudeX: 0.25
-  yChange: 0
+  yChange: 1
   yHeight: 3
   player: {fileID: 0}
 --- !u!124 &124205537780152330

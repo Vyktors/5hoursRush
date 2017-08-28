@@ -1,4 +1,7 @@
-﻿
+﻿/*Script has to be attach to a Camera, to make it works, you need to have an object with a tag "player" to follow  */
+/*Smootitude change the camera speed, more the value is close to 0, more the camera stick to the player*/
+/*The positionY axis can be locked*/
+
 using UnityEngine;
 using System.Collections;
 
@@ -6,13 +9,12 @@ public class CameraController : MonoBehaviour {
 
 
     private Vector2 velocity;
-
-    public float smootitudeY;
-    public float smootitudeX;
-    public bool yChange;
-    public float yHeight;
-    public GameObject player;
-
+    
+    public float smootitudeY;   //Speed on Yaxis
+    public float smootitudeX;   //Speed on Xaxis    
+    public bool yChange;        //Enable the camera to move on the Yaxis   
+    public float yHeight;       //Set the height of the camera if its locked on    
+    public GameObject player;   //Object(player) that the camera follows
 
     void Start()
     {

@@ -19,10 +19,12 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
+
+        //X Translation
 		float x = Input.GetAxis ("Horizontal");
 		transform.Translate ((new Vector2(x, 0) * speed));
 
-
+        //Jump
 		if (Input.GetButtonDown ("Jump") && readyToJump) {
 			body.AddForce (new Vector2 (0, jump));
 			readyToJump = false;
@@ -36,5 +38,15 @@ public class PlayerMovement : MonoBehaviour {
 		if (other.gameObject.tag == "floor") {
 			readyToJump = true;
 		}
+
+        if(other.gameObject.tag == "lava")
+        {
+            death();
+        }
 	}
+
+    private void death()
+    {
+        Destroy(this.gameObject);
+    }
 }
