@@ -151,7 +151,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1326175102}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 197776859}
   - component: {fileID: 197776858}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,12 +234,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1326175102}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34823596, y: 0.28124994}
   m_AnchorMax: {x: 0.65376407, y: 0.409375}
-  m_AnchoredPosition: {x: 1.5, y: -10.600002}
-  m_SizeDelta: {x: -3, y: -21.2}
+  m_AnchoredPosition: {x: -0.53601, y: -19.499992}
+  m_SizeDelta: {x: -3.3034973, y: -3.2999992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &197776858
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 14
     m_MaxSize: 40
     m_Alignment: 4
@@ -814,6 +814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150646264}
   - component: {fileID: 1150646265}
+  - component: {fileID: 1150646266}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -890,6 +891,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1150646266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150646263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6558cde59218c4429a6fcb37be1f341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 197776858}
+  slider: {fileID: 1150646265}
 --- !u!1 &1181317748
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,8 +961,8 @@ RectTransform:
   - {fileID: 585272170}
   - {fileID: 1709418944}
   - {fileID: 1879500819}
-  - {fileID: 197776857}
   - {fileID: 108273487}
+  - {fileID: 197776857}
   - {fileID: 1150646264}
   m_Father: {fileID: 845483814}
   m_RootOrder: 0
