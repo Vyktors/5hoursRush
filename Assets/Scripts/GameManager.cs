@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GameCamera = Instantiate(cameraPrefab, new Vector3(0, 0, -1), Quaternion.identity);
+        GameCamera = Instantiate(cameraPrefab, new Vector3(0,3f, -1), Quaternion.identity);
         
 		SpawnPlayer ();
         Debug.Log(CountOfPlayer);

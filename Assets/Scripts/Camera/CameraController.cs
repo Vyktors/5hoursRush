@@ -1,47 +1,45 @@
-﻿/* Move the camera with an object,  To make this script works, you need to drop it on a camera object and give him a object(player) to follow.
- * Smootitude is used to increase or decrease the speed of the camera, lesser the number is, slower the camera will be.
- */
-
+﻿
 using UnityEngine;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
 
+    private Vector2 velocity;
+
+    public float smootitudeY;
+    public float smootitudeX;
+    public bool yChange;
+    public float yHeight;
     public GameObject player;
-    public float vecVelocite;
-    public Vector3 offset;   
-    Vector3 playerPosition;
-    public float smootitude = 5;
 
 
     void Start()
     {
-    // position du joueur prend la position de la caméra(la position n,est toujours pas attribué à l'objet joueur)
-        playerPosition = transform.position;
+
+        player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
-    // Update is called once per frame
+
     void FixedUpdate()
     {
-        if (player)
+
+        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smootitudeX);
+        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smootitudeY);
+
+        if (yChange)
         {
-            Vector3 posNoZ = transform.position;
-            posNoZ.z = player.transform.position.z;
-            
-
-         
-            //Direction de la camera vers le joueur
-            Vector3 playerDirection = (player.transform.position - posNoZ);
-
-
-            vecVelocite = playerDirection.magnitude * smootitude;
-
-            playerPosition = transform.position + (playerDirection.normalized * vecVelocite * Time.deltaTime);
-
-            transform.position = Vector3.Lerp(transform.position, playerPosition + offset, 0.25f);
-
-            
+            transform.position = new Vector3(posX, posY, transform.position.z);
+            Debug.Log("transform with Y");
         }
+        else
+        {
+            transform.position = new Vector3(posX, yHeight, transform.position.z);
+            Debug.Log("transform without Y");
+        }
+
+
+
     }
 }
