@@ -29,6 +29,8 @@ public class CameraController : MonoBehaviour {
             Vector3 posNoZ = transform.position;
             posNoZ.z = player.transform.position.z;
             
+
+         
             //Direction de la camera vers le joueur
             Vector3 playerDirection = (player.transform.position - posNoZ);
 

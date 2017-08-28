@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
 
 		GameObject currentGameObject = GameObject.Instantiate (playerPrefab, spawn, Quaternion.identity);
 		GameCamera.GetComponent<CameraController> ().player = currentGameObject;
-		players.Add (new Player (currentGameObject));
+		//players.Add (new Player (currentGameObject)); 
 
 	}
 
