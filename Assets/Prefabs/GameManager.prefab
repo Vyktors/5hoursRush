@@ -53,5 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1096307495044922, guid: dfca13133424e4d1884e8b68ad04375c,
     type: 2}
-  GameCamera: {fileID: 0}
+  cameraPrefab: {fileID: 1095072718780708, guid: fb8788c456e13884bb95e6020cf02536,
+    type: 2}
   spawn: {x: 0, y: 15, z: 0}
+  CountOfPlayer: 0

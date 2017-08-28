@@ -10,9 +10,7 @@ public class FloorCollider : MonoBehaviour {
         {
             Debug.Log("detect floor");
 
-            this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
-
-            
+            this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY; 
         }
 
     }

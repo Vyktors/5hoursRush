@@ -17,14 +17,18 @@ public class Player{
 }
 
 public class GameManager : MonoBehaviour {
-	public GameObject playerPrefab; 
-	public GameObject GameCamera;
+	public GameObject playerPrefab;
+    private GameObject GameCamera;
+    public GameObject cameraPrefab;
 	public Vector3 spawn;
     public float CountOfPlayer;
 
 	private List<Player> players;
 
-
+    public void Awake()
+    {
+      //  DontDestroyOnLoad(this.gameObject);
+    }
 
 	public void SpawnPlayer(){
 
@@ -36,7 +40,8 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GameCamera = GameObject.Find("Camera");
+        GameCamera = Instantiate(cameraPrefab, new Vector3(0, 0, -1), Quaternion.identity);
+        
 		SpawnPlayer ();
         Debug.Log(CountOfPlayer);
     }

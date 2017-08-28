@@ -10,7 +10,7 @@ public class PlayButton : MonoBehaviour {
 	public Slider PlayerSlider;
     public GameObject gameManagerPrefab;
 
-    public static GameObject gameManager;
+    private GameObject gameManager;
     private Button currentButton;
 
     void Awake()
@@ -26,6 +26,7 @@ public class PlayButton : MonoBehaviour {
 	public void OnClick()
     {
         gameManager = Instantiate(gameManagerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Debug.Log("Intantiation GameManager");
         gameManager.GetComponent<GameManager>().CountOfPlayer = PlayerSlider.value;
         
         Application.LoadLevel ("Main");
