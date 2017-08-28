@@ -363,6 +363,10 @@ Prefab:
       propertyPath: m_Name
       value: Floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1821556846888600, guid: 4359adfa586406749bdce171f928e706, type: 2}
+      propertyPath: m_TagString
+      value: DeadZone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4359adfa586406749bdce171f928e706, type: 2}
   m_IsPrefabParent: 0

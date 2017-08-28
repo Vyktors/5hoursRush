@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
 			readyToJump = true;
 		}
 
-        if(other.gameObject.tag == "lava")
+        if(other.gameObject.tag == "DeadZone")
         {
             death();
         }
