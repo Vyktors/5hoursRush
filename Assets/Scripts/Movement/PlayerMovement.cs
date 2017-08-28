@@ -7,12 +7,15 @@ public class PlayerMovement : MonoBehaviour {
 	public float speed;
 	[Header("Player Jump force")]
 	public float jump;
+    public AudioClip jumpSound;
 
 	private Rigidbody2D body;
 	private bool readyToJump;
+    private AudioSource source;
 
 	void Awake(){
 		body = this.GetComponent<Rigidbody2D> ();
+        source = GetComponent<AudioSource>();
 	}
 
 	void FixedUpdate () {
@@ -23,6 +26,9 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetButtonDown ("Jump") && readyToJump) {
 			body.AddForce (new Vector2 (0, jump));
 			readyToJump = false;
+
+            source.PlayOneShot(jumpSound);
+            
 		}
 	}
 
