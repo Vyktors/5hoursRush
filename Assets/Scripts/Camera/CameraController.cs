@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour {
     public float smootitudeY;   //Speed on Yaxis
     public float smootitudeX;   //Speed on Xaxis    
     public bool yChange;        //Enable the camera to move on the Yaxis   
-    public float yHeight;       //Set the height of the camera if its locked on    
+    public float yHeight;       //Set the height of the camera if it's locked on    
     public GameObject player;   //Object(player) that the camera follows
 
     void Start()

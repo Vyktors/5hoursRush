@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smootitudeY: 0.25
   smootitudeX: 0.25
-  yChange: 1
+  yChange: 0
   yHeight: 3
   player: {fileID: 0}
 --- !u!124 &124205537780152330
